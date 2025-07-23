@@ -1,5 +1,9 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-Project XYZ
+<p align="center">
+  <img src="water_pollution_and_ health_ risk_ explorer.jpg" 
+</p>
+
+## WATER POLLUTION AND HEALTH RISK EXPLORER
+
 
 Project XYZ is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
 CI logo
