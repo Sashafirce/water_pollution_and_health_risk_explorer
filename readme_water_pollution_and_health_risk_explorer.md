@@ -4,20 +4,83 @@
 
 ## WATER POLLUTION AND HEALTH RISK EXPLORER
 
+This Water Pollution & Health Risk Explorer project is an evidence-based, interdisciplinary 
 
-Project XYZ is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
-CI logo
-Dataset Content
+project aiming to describe the ways environmental determinants like water pollution, access 
+
+to clean water, sanitation, and healthcare facilities contribute to public health 
+
+outcomes—specifically infant mortality and disease burden—in low- and middle-income 
+
+countries.
+
+In my role as **Project Manager**, I oversaw the entire life cycle of the project, from scoping 
+
+research questions through timelines coordination, to ensuring all deliverables were 
+
+integrated into strategic goals.
+
+As a **Data Analyst and Econometrist**, I performed extensive data wrangling, hypothesis 
+
+testing, and regression modeling to test key hypotheses from real world global datasets. I 
+
+applied multiple linear regression, interaction terms, and Random Forest modeling to 
+
+identify insights and build evidence-driven predictive models.
+
+As a **Data Visualiser**, I designed intuitive, easy-to-understand visualisations using 
+
+Python libraries (Matplotlib, Seaborn, Plotly) and visualisations on Tableau and integrated 
+
+them into an interactive Streamlit dashboard that supports users—especially non-technical 
+
+stakeholders—to quickly grasp complex relationships in an instant.
+
+As a **Design Thinker**, I applied empathy and user-centred design principles to ensure an understable data analysis and the 
+
+dashboard is accessible, actionable, and decision-maker-focused for public health and 
+
+development fields.
+
+Finally, as a Developer, I built and validated the dashboard for later deployment on Heroku, 
+
+combining frontend UI/UX and backend machine learning algorithms to create an intuitive 
+
+interactive process.
+
+This combined process—researched, analyzed, designed, and developed—allowed the project to 
+
+function both as an analytical investigation and as a useful tool for policymakers and 
+
+researchers coordinating water-related public health dangers.
+
+### **Dataset Content**
 
     Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
 
-Business Requirements
+### **Business Requirements**
+- Identify drivers of infant mortality and disease outbreaks at the socioeconomic and 
+
+environmental levels.
+
+- Predict health risk based on available indicators (e.g., sanitation, water access, GDP, 
+
+pollution).
+
+- Create an interactive dashboard for policymakers to map and act on hotspots of health 
+
+burden.
 
     Describe your business requirements
 
-Hypothesis and how to validate?
+### **Hypothesis and supporting literature**
 
-    List here your project hypothesis(es) and how you envision validating it (them)
+ |   |   |   |   |   |
+|---|---|---|---|---|
+|   |   |   |   |   |
+|   |   |   |   |   |
+|   |   |   |   |   |   
+
 
 Project Plan
 
