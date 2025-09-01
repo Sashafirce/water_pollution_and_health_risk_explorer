@@ -4,58 +4,47 @@
 
 ## WATER POLLUTION AND HEALTH RISK EXPLORER
 
-This Water Pollution & Health Risk Explorer project is an evidence-based, interdisciplinary initiative aimed at describing the ways environmental determinants, such as water pollution, access to clean water, sanitation, and healthcare facilities, contribute to public health outcomes—specifically, infant mortality and disease burden—in low- and middle-income countries.
+This Water Pollution & Health Risk Explorer project is an evidence-based, interdisciplinary initiative aimed at describing the ways environmental determinants, such as water pollution, access to clean water, sanitation, and healthcare facilities, contribute to public health outcomes—specifically, infant mortality and disease burden, in low, and middle-income countries.
 
-In my role as **Project Manager**, I oversaw the entire life cycle of the project, from scoping research questions through timeline coordination to ensuring all deliverables were integrated into strategic goals.
+In my role as **Project Manager**, I oversaw the entire project life cycle, from scoping research questions through timeline coordination to ensuring that all deliverables were integrated into strategic goals.
 
-As a **Data Analyst and Econometrist**, I performed extensive data wrangling, hypothesis testing, and regression modeling to test key hypotheses from real world global datasets. I applied multiple linear regression, interaction terms, and Random Forest modeling to identify insights and build evidence-driven predictive models.
+As a **Data Analyst and Econometrist**, I performed extensive data wrangling, hypothesis testing, and regression modelling to test key hypotheses from real-world global datasets. I applied multiple linear regression, interaction terms, and Random Forest modelling to identify insights and build evidence-driven predictive models.
 
-As a **Data Visualiser**, I designed intuitive, easy-to-understand visualisations using 
+As a **Data Visualiser**, I designed intuitive, easy-to-understand visualisations using Python libraries (Matplotlib, Seaborn, Plotly) and visualisations in Tableau, and integrated them into an interactive Streamlit dashboard that supports users, primarily non-technical stakeholders, in quickly grasping complex relationships.
 
-Python libraries (Matplotlib, Seaborn, Plotly) and visualisations on Tableau and integrated 
+As a **Design Thinker**, I applied empathy and user-centred design principles to ensure an understandable data analysis and the dashboard is accessible, actionable, and decision-maker-focused for public health and development fields.
 
-them into an interactive Streamlit dashboard that supports users—especially non-technical 
+Finally, as a **Developer**, I built and validated the dashboard for later deployment on Heroku, combining frontend UI/UX and backend machine learning algorithms to create an intuitive, interactive process.
 
-stakeholders—to quickly grasp complex relationships in an instant.
-
-As a **Design Thinker**, I applied empathy and user-centred design principles to ensure an understable data analysis and the 
-
-dashboard is accessible, actionable, and decision-maker-focused for public health and 
-
-development fields.
-
-Finally, as a Developer, I built and validated the dashboard for later deployment on Heroku, 
-
-combining frontend UI/UX and backend machine learning algorithms to create an intuitive 
-
-interactive process.
-
-This combined process—researched, analyzed, designed, and developed—allowed the project to 
-
-function both as an analytical investigation and as a useful tool for policymakers and 
-
-researchers coordinating water-related public health dangers.
+This combined process—researched, analysed, designed, and developed—allowed the project to function both as an analytical investigation and as a valuable tool for policymakers and researchers coordinating water-related public health dangers.
 
 
 
 ### **Dataset Content**
 
-    Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+Structure: 3,000 rows × 24 columns; no missing values.
+
+Grain: Panel by Country–Region–Year × Water Source × Treatment.
+
+Coverage: 10 countries, years 2000–2024.
+
+What it contains:
+
+Water quality: contaminant ppm, pH, turbidity (NTU), dissolved O₂ (mg/L), nitrate (mg/L), lead (µg/L), bacteria (CFU/mL).
+
+Health outcomes: diarrhoea, cholera, and typhoid cases per 100,000; infant mortality rate per 1,000 live births.
+
+Access & context: clean-water %, sanitation %, healthcare index (0–100), GDP per capita (USD), urbanisation %, rainfall (mm), temperature (°C), population density.
+
+Use: Relates water quality/treatment & access to disease incidence with socio-economic and environmental context.
 
 ### **Business Requirements**
-- Identify drivers of infant mortality and disease outbreaks at the socioeconomic and 
+- Identify drivers of infant mortality and disease outbreaks at the socioeconomic and environmental levels.
 
-environmental levels.
+- Predict health risk based on available indicators (e.g., sanitation, water access, GDP, pollution).
 
-- Predict health risk based on available indicators (e.g., sanitation, water access, GDP, 
+- Create an interactive dashboard for policymakers to map and act on hotspots of health burden.
 
-pollution).
-
-- Create an interactive dashboard for policymakers to map and act on hotspots of health 
-
-burden.
-
-    Describe your business requirements
 
 ## Hypotheses and Supporting Literature
 
@@ -63,15 +52,9 @@ burden.
 
 **Hypothesis:** Higher levels of water contamination are associated with increased disease burden.  
 
--  **Supporting Literature:** WHO and UN Water reports consistently show that contaminated 
+-  **Supporting Literature:** WHO and UN Water reports consistently show that contaminated water sources increase the spread of waterborne diseases such as diarrhoea, cholera, and typhoid fever.
 
-water sources increase the spread of waterborne diseases such as diarrhoea, cholera, and 
-
-typhoid fever.
-
-- Industrial pollutants, heavy metals, and untreated sewage have been directly linked to a 
-
-rise in Disability-Adjusted Life Years (DALYs) in multiple developing regions.
+- Industrial pollutants, heavy metals, and untreated sewage have been directly linked to a rise in Disability-Adjusted Life Years (DALYs) in multiple developing regions.
 
 🔗 _Supporting literature:_  
 > - Prüss-Ustün, A., et al. (2019). *Burden of disease from inadequate water, sanitation and hygiene for selected adverse health outcomes: An updated analysis with a focus on low- and middle-income countries.* International Journal of Hygiene and Environmental Health, 222(5), 765–777.  
@@ -79,17 +62,11 @@ rise in Disability-Adjusted Life Years (DALYs) in multiple developing regions.
 
 ### H2: Healthcare Access Index vs Disease Burden
 
-**Hypothesis:** Countries with stronger healthcare access tend to experience lower overall 
+**Hypothesis:** Countries with stronger healthcare access tend to experience lower overall disease burden.  
 
-disease burden.  
+- **Supporting Literature:** The Global Burden of Disease study and World Bank research highlight the role of healthcare accessibility in reducing preventable disease and mortality.
 
-- **Supporting Literature:** The Global Burden of Disease study and World Bank research 
-
-highlight the role of healthcare accessibility in reducing preventable disease and mortality.
-
--  Countries with higher scores in healthcare infrastructure and access demonstrate better 
-
-health outcomes and resilience against environmental risk factors.
+-  Countries with higher scores in healthcare infrastructure and access demonstrate better health outcomes and resilience against environmental risk factors.
 
 🔗 _Supporting literature:_  
 > - Boerma, T., et al. (2014). *Monitoring progress towards universal health coverage at country and global levels*. PLoS Med, 11(9), e1001731.  
@@ -97,19 +74,11 @@ health outcomes and resilience against environmental risk factors.
 
 ### H3: Water & Sanitation Index vs Infant Mortality
 
-**Hypothesis:** Better water and sanitation services are associated with lower infant 
+**Hypothesis:** Better water and sanitation services are associated with lower infant mortality rates. 
 
-mortality rates. 
+- **Supporting Literature:** UNICEF and WHO studies reveal that lack of access to clean water and safe sanitation is one of the leading causes of neonatal and infant deaths, especially in low-income countries.
 
-- **Supporting Literature:** UNICEF and WHO studies reveal that lack of access to clean 
-
-water and safe sanitation is one of the leading causes of neonatal and infant deaths, 
-
-especially in low-income countries.
-
-- Hygiene education, proper sewage systems, and access to potable water are identified as 
-
-key drivers in reducing under-five mortality.
+- Hygiene education, proper sewage systems, and access to potable water are identified as key drivers in reducing under-five mortality.
 
 🔗 _Supporting literature:_  
 > - UNICEF & WHO (2021). *Progress on household drinking water, sanitation and hygiene 2000–2020: Five years into the SDGs*.  
@@ -118,24 +87,18 @@ key drivers in reducing under-five mortality.
 
 ### Machine Learning: Predicting Infant Mortality Rate
 
-**Objective:** Predict infant mortality based on a range of socioeconomic and environmental 
-
-indicators.  
+**Objective:** Predict infant mortality based on a range of socioeconomic and environmental indicators.  
 
 
 ## Project Plan
 
-This project followed a structured data analysis pipeline to investigate the relationships 
-
-between water pollution, public health outcomes, and socioeconomic factors.
+This project followed a structured data analysis pipeline to investigate the relationships between water pollution, public health outcomes, and socioeconomic factors.
 
 ### Workflow Overview:
 
 1. **Data Collection:**
 
-   - Publicly available datasets on water contamination levels, health burden indices, 
-   
-   healthcare access, GDP, infant mortality, and sanitation were gathered and merged.
+   - Publicly available datasets on water contamination levels, health burden indices, healthcare access, GDP, infant mortality, and sanitation were gathered and merged.
 
    - Sources included WHO, World Bank, and national statistics.
 
@@ -145,15 +108,11 @@ between water pollution, public health outcomes, and socioeconomic factors.
 
    - Datasets were stored and versioned locally and documented via GitHub.
 
-   - A CSV file was cleaned and transformed into a final dataset used for Tableau and app 
-   
-   development.
+   - A CSV file was cleaned and transformed into a final dataset used for Tableau and app development.
 
 3. **Exploratory Data Analysis (EDA):**
 
-   - EDA was conducted using pandas, seaborn, and matplotlib to understand data 
-   
-   distributions, correlations, and outliers.
+   - EDA was conducted using pandas, seaborn, and matplotlib to understand data distributions, correlations, and outliers.
 
 4. **Hypothesis Testing:**
 
@@ -165,9 +124,7 @@ between water pollution, public health outcomes, and socioeconomic factors.
 
 5. **Machine Learning:**
 
-   - A Random Forest Regressor was trained to predict Infant Mortality Rate using 
-   
-   socioeconomic and environmental variables.
+   - A Random Forest Regressor was trained to predict Infant Mortality Rate using socioeconomic and environmental variables.
 
    - Predictions were added to the dataset and visualised.
 
@@ -180,13 +137,9 @@ between water pollution, public health outcomes, and socioeconomic factors.
 
 ### Research Methodology:
 
-It has been adopted a hybrid research approach combining descriptive analytics, inferential 
+A hybrid research approach has been adopted, combining descriptive analytics, inferential visualisation, and predictive modelling to enable both exploration and insight communication.
 
-visualisation, and predictive modelling to enable both exploration and insight communication.
-
-The use of design thinking guided the dashboard structure, prioritising user experience and 
-
-data storytelling.
+The use of design thinking guided the dashboard structure, prioritising user experience and data storytelling.
 
 ##Design Thinking Implemented in the app creation
 
@@ -240,7 +193,7 @@ data storytelling.
 
 ### Structuring the Analysis:
 - Each hypothesis was explored visually before applying modelling.
-- The ML model used a curated set of variables and validated via R² and feature importance.
+- The ML model used a curated set of variables and was validated via R² and feature importance.
 
 ## Bugs / Limitations
 
@@ -253,17 +206,11 @@ data storytelling.
 
 ### Limitations & Alternative Approaches:
 
-- **Data gaps** for certain regions limited completeness; handled by using averages or 
+- **Data gaps** for certain regions limited completeness; handled by using averages or excluded from the visual.
 
-excluding from the visual.
+- **No time-series analysis** was conducted due to inconsistent yearly data; future work could incorporate panel data.
 
-- **No time-series analysis** was conducted due to inconsistent yearly data; future work 
-
-could incorporate panel data.
-
-- **Alternative model testing (e.g., XGBoost)** was skipped for simplicity and 
-
-interpretability.
+- **Alternative model testing (e.g., XGBoost)** was skipped for simplicity and interpretability.
 
 ## Dashboard design
 
@@ -279,7 +226,7 @@ Dashboard Features:
 
 - Designed for both policy stakeholders and data-savvy users
 
-  Clikc the links below to explore the dashboards:
+  Click the links below to explore the dashboards:
 
  - [Machine Learning model](https://public.tableau.com/app/profile/sasha.firce/viz/WaterpollutionHealthriskML/Dashboard4)
 
@@ -297,7 +244,7 @@ Dashboard Features:
 
   - Visual design ideation (colour schemes, layout guidance)
 
-  - Machine learning model correction framing and structuring
+  - Machine learning model correction framing, and structuring
 
 
 
@@ -337,26 +284,9 @@ Dashboard Features:
 
 **Development Roadmap**
 
- The challenges I faced included technical issues, particularly with the internet 
- 
- connection, and a mid-level mistake I made during the ETL pipeline process.  The main issue 
- 
- was that I noticed the error while creating the app for the project, which required 
- 
- restarting almost the entire project. There is a final issue: I am unable to deploy the app 
- 
- on Heroku because I deleted the Authentication app that was required to create the Heroku 
- 
- account, and now I cannot log in to my account. I tried to download the app again, but all 
- 
- the information from my Heroku account was deleted. In summary, I have an app that I cannot 
- 
- show as I wanted. The good thing is that anyone can open the app and activate it through VS 
- 
- Code.
+ The challenges I faced included technical issues, particularly with the internet connection, and a mid-level mistake I made during the ETL pipeline process.  The main problem was that I noticed the error while creating the app for the project, which required restarting almost the entire project. There is a final issue: I am unable to deploy the app on Heroku because I deleted the Authentication app that was required to create the Heroku account, and now I cannot log in to my account. I tried to download the app again, but all the information from my Heroku account was deleted. In summary, I have an app that I cannot show as I wanted. The good thing is that anyone can open the app and activate it through VS Code.
 
 **Deployment Heroku**
-
 
 I was unable to deploy my app due to technical issues; however, it can be opened through VS Code. I can also provide the link to the Local server. 
 
@@ -369,7 +299,7 @@ I was unable to deploy my app due to technical issues; however, it can be opened
 
 **Credits**
 
- https://www.w3schools.com/python/pandas/pandas_analyzing.asp. It helped me understand and learn how to analyse the data properly.
+• https://www.w3schools.com/python/pandas/pandas_analyzing.asp. It helped me understand and learn how to analyse the data properly.
 • https://copilot.microsoft.com/chats/NdbvxkFKX1cA4RBrX4jtu I used it specifically for logic and syntax errors.
 • https://www.markdownguide.org/basic-syntax/ I needed to write the README document.
 
